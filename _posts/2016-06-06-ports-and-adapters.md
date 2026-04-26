@@ -4,7 +4,6 @@ title: "Ports And Adapters"
 date: 2016-06-06 00:00:00 +0200
 categories: ["thoughts"]
 excerpt: ""
-source_path: "posts/2016-06-06-ports-and-adapters.md"
 ---
 {% raw %}
 > Disclaimer: Most of this post are ideas translated / adapted by me during the study. I do not give myself any credit for it, obviously. Hexagonal architecture is a concept developed by Alistair Cockburn. It is necessary to read and reread the advices of Robert C. Martin (Uncle Bob) to understand this ecosystem and the good practices of object-oriented programming.

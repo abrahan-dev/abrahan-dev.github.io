@@ -4,7 +4,6 @@ title: "Simplicity In Code"
 date: 2022-11-10 00:00:00 +0200
 categories: ["thoughts"]
 excerpt: ""
-source_path: "posts/2022-11-10-simplicity-in-code.md"
 ---
 {% raw %}
 It is always difficult to define a concept that is generally used in a subjective way, meaning different things. When we say that something is simple, it could have positive or negative connotations depending on the context and the intention.

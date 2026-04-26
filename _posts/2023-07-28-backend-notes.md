@@ -2,9 +2,8 @@
 layout: post
 title: "Backend Notes"
 date: 2023-07-28 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2023-07-28-backend-notes.md"
 ---
 {% raw %}
 Some notes about backend development through a practical example. At the end we get a simple and secured nodejs web application running on a server with nginx, https, some CI and load balancing.

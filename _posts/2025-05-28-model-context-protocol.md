@@ -4,7 +4,6 @@ title: "Model Context Protocol"
 date: 2025-05-28 00:00:00 +0200
 categories: ["thoughts"]
 excerpt: ""
-source_path: "posts/2025-05-28-model-context-protocol.md"
 ---
 {% raw %}
 Some quick conclusions about MCP.

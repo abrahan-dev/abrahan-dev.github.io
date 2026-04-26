@@ -2,9 +2,8 @@
 layout: post
 title: "Code Review"
 date: 2019-03-25 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["talks"]
 excerpt: ""
-source_path: "posts/2019-03-25-code-review.md"
 ---
 {% raw %}
 I've recently watched a great keynote about code reviews presented by Trisha Gee during the SCLConf 2018. You should go directly to the source which I link below. This is kind of TL;DR

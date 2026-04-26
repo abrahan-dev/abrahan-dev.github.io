@@ -2,9 +2,8 @@
 layout: post
 title: "Projections"
 date: 2024-11-17 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2024-11-17-projections.md"
 ---
 {% raw %}
 Projections help when we encounter performance issues in the database due to queries involving many joins.

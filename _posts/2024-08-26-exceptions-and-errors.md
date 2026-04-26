@@ -2,22 +2,22 @@
 layout: post
 title: "Exceptions And Errors"
 date: 2024-08-26 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2024-08-26-exceptions-and-errors.md"
 ---
 {% raw %}
+
 ## Why do we need to avoid generic exceptions?
 
 Why should I create specific domain-related exceptions?
 
--   Fragility. The code handling the exception might rely on the structure or message of the exception. It’s better to create our own exception. In TypeScript, this means that depending on built-in or third-party exceptions (like relying on specific error messages or properties) can make your code fragile. If the structure of these exceptions changes, it might break the error-handling logic. Instead, creating your own custom exception class gives you more control and makes your code more robust.
+- Fragility. The code handling the exception might rely on the structure or message of the exception. It’s better to create our own exception. In TypeScript, this means that depending on built-in or third-party exceptions (like relying on specific error messages or properties) can make your code fragile. If the structure of these exceptions changes, it might break the error-handling logic. Instead, creating your own custom exception class gives you more control and makes your code more robust.
 
 ```typescript
 class PostContentException extends Exception {}
 ```
 
--   Specificity. It allows us to handle exceptions in a more precise way and make better decisions. In TypeScript, creating custom exceptions improves the specificity of error handling. This means you can catch and respond to particular errors more accurately instead of catching general exceptions. It leads to better decision-making based on the type of error.
+- Specificity. It allows us to handle exceptions in a more precise way and make better decisions. In TypeScript, creating custom exceptions improves the specificity of error handling. This means you can catch and respond to particular errors more accurately instead of catching general exceptions. It leads to better decision-making based on the type of error.
 
 ```typescript
 class PostContentIsEmptyException extends PostContentException {}
@@ -25,7 +25,7 @@ class PostContentIsEmptyException extends PostContentException {}
 class PostContentIsTooShortException extends PostContentException {}
 ```
 
--   Encapsulation. It allows us to encapsulate exception-handling logic in one place. We can store the state of the exception, for example, by passing data to it through the constructor and storing the message internally. In TypeScript, creating custom exceptions allows you to encapsulate both the error-handling logic and any relevant data within the exception itself. This improves the maintainability of your code by centralizing the logic and storing the exception’s state in a structured way.
+- Encapsulation. It allows us to encapsulate exception-handling logic in one place. We can store the state of the exception, for example, by passing data to it through the constructor and storing the message internally. In TypeScript, creating custom exceptions allows you to encapsulate both the error-handling logic and any relevant data within the exception itself. This improves the maintainability of your code by centralizing the logic and storing the exception’s state in a structured way.
 
 ```typescript
 class PostContentIsTooShortException extends PostContentException {
@@ -98,17 +98,17 @@ function _handleErrors(error: Errors): void {
         case 'UserNameTooLongError':
             // instead of using strings, we can create a type property within the error:
             // type PostAlreadyExistsError = {
-            // 	  readonly type: "PostAlreadyExistsError";
-            // 	  message: string;
+            //    readonly type: "PostAlreadyExistsError";
+            //    message: string;
             // };
             // and the switch will be something like this:
             // switch (error.type) {
             //     case "PostContentIsEmptyError":
-            // 		 case "PostContentTooLongError":
-            // 		     return HttpNextResponse.domainError(error, 400);
-            // 		 default:
-            // 		     assertNever(error);
-            // 		 }
+            //    case "PostContentTooLongError":
+            //        return HttpNextResponse.domainError(error, 400);
+            //    default:
+            //        assertNever(error);
+            //    }
             console.log('User type is too long')
             break
         case 'UserPostAlreadyLikedError':

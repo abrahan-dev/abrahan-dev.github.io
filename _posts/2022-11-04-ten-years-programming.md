@@ -4,9 +4,9 @@ title: "Ten Years Programming"
 date: 2022-11-04 00:00:00 +0200
 categories: ["thoughts"]
 excerpt: ""
-source_path: "posts/2022-11-04-ten-years-programming.md"
 ---
 {% raw %}
+
 ## Crisis, what crisis?
 
 It has been more than 10 years of programming, and I am not sure if this is really a job apart from the fact that I am paid. I am not completely sure about what are the characteristics of the code that I like either, nor what is a good programmer although I have an opinion.

@@ -2,25 +2,24 @@
 layout: post
 title: "Algorithms"
 date: 2023-01-03 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2023-01-03-algorithms.md"
 ---
 {% raw %}
 A few notes while studying the subject.
 
 ## Big O notation
 
--   A way to categorize algorithms time or memory requirements based on input: as the input growths, how fast the computation/memory growths.
--   It generalizes the growth of the algorithm.
--   It tells us whether the algorithm will perform well enough in a given context.
--   It can help us to choose an appropriate data structure or algorithm to resolve a problem efficiently.
+- A way to categorize algorithms time or memory requirements based on input: as the input growths, how fast the computation/memory growths.
+- It generalizes the growth of the algorithm.
+- It tells us whether the algorithm will perform well enough in a given context.
+- It can help us to choose an appropriate data structure or algorithm to resolve a problem efficiently.
 
 Important concepts:
 
--   The growth is with respect to the input.
--   Constants are dropped.
--   We usually take into account the worst case scenario.
+- The growth is with respect to the input.
+- Constants are dropped.
+- We usually take into account the worst case scenario.
 
 ### O(n)
 
@@ -37,19 +36,19 @@ function sum(numbers: []): number {
 }
 ```
 
--   If the for loop of this function is executed 2 times, the complexity would be still O(n) and not O(2n) because we categorize the algorithm based on the input. So the constants (2) are dropped because they eventually become irrelevant.
+- If the for loop of this function is executed 2 times, the complexity would be still O(n) and not O(2n) because we categorize the algorithm based on the input. So the constants (2) are dropped because they eventually become irrelevant.
     I want to know if the algorithm is going to crash my computer, not the exact time it is going to take to complete the task.
--   If we return from within the loop because some condition is met, the complexity would be still O(n) because we consider worst case scenario and not let's say O(n-2) because the condition is met in the third to last element.
+- If we return from within the loop because some condition is met, the complexity would be still O(n) because we consider worst case scenario and not let's say O(n-2) because the condition is met in the third to last element.
 
 ### Common complexities
 
--   O(1): Constant time wherever the input is
--   O(logn): If you half the input could be this
--   O(n): the complexity increases as the input
--   O(nlogn): If you half the input could be also this
--   O(n^2): It grows pretty fast
--   O(2^n): Cannot run on traditional computer!
--   O(n!): Cannot run on traditional computer!
+- O(1): Constant time wherever the input is
+- O(logn): If you half the input could be this
+- O(n): the complexity increases as the input
+- O(nlogn): If you half the input could be also this
+- O(n^2): It grows pretty fast
+- O(2^n): Cannot run on traditional computer!
+- O(n!): Cannot run on traditional computer!
 
 ### O(logn)
 
@@ -97,10 +96,10 @@ function sum(numbers: []): number {
 
 A fixed size, contiguous memory chunk. We can perform a few operations:
 
--   Getting a specific index: multiplying the offset by the size (usually in bytes) of the elements. _O(1)_
--   Insertion at specific index: set an element
--   Deletion at specific index: it depends on how the program interpret it, it could be by setting a 0
--   We cannot grow it and there is not "insertAt", "push" or "pop", but we can create it. Traditional arrays do not have that
+- Getting a specific index: multiplying the offset by the size (usually in bytes) of the elements. _O(1)_
+- Insertion at specific index: set an element
+- Deletion at specific index: it depends on how the program interpret it, it could be by setting a 0
+- We cannot grow it and there is not "insertAt", "push" or "pop", but we can create it. Traditional arrays do not have that
 
 Javascript does have "[]" which is not really an array but we can use it as an array
 
@@ -231,9 +230,9 @@ export default function bubble_sort(arr: number[]): void {
 
 A simple array cannot:
 
--   Delete an element
--   Insert new elements
--   Grow
+- Delete an element
+- Insert new elements
+- Grow
 
 This is why in here `const a = []`, "a" is not an array as we can push, pop, etc.
 

@@ -4,7 +4,6 @@ title: "Thoughts On DDD"
 date: 2016-05-25 00:00:00 +0200
 categories: ["thoughts"]
 excerpt: ""
-source_path: "posts/2016-05-25-thoughts-on-ddd.md"
 ---
 {% raw %}
 > At the end, everything is about the customer's happiness and the programmer's happiness.

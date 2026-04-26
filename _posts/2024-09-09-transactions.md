@@ -2,11 +2,11 @@
 layout: post
 title: "Transactions"
 date: 2024-09-09 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2024-09-09-transactions.md"
 ---
 {% raw %}
+
 ## Repository
 
 In this approach, transactions are managed within the repository. For example, we might have a `save` method that initiates and finalizes a transaction.

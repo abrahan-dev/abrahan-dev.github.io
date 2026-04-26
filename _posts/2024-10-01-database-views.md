@@ -2,11 +2,11 @@
 layout: post
 title: "Database Views"
 date: 2024-10-01 00:00:00 +0200
-categories: ["thoughts"]
+categories: ["learning"]
 excerpt: ""
-source_path: "posts/2024-10-01-database-views.md"
 ---
 {% raw %}
+
 ## When Views Are Useful
 
 In legacy systems, particularly those with numerous tables and where making modifications is challenging, you may want to define new concepts in repositories that isolate your code from this complexity (an anti-corruption layer).
