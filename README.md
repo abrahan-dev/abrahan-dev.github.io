@@ -21,3 +21,8 @@ Then open <http://127.0.0.1:4001>.
 The wrapper always uses port `4001`. If the preview server is already running,
 it exits cleanly instead of starting a second Jekyll process and raising
 `Address already in use`.
+
+The same wrapper also watches the repository files. When a file changes, it
+restarts Jekyll automatically on the same port, so changes to `_config.yml`,
+layouts, posts, CSS, and JavaScript are picked up without manually stopping and
+starting the preview server.
