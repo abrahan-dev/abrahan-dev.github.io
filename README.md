@@ -13,7 +13,11 @@ MAKE='make CXX=/path/to/this/repository/scripts/clang++-sdk' bundle install
 Start the local preview server with:
 
 ```bash
-bundle exec jekyll serve --host 127.0.0.1 --port 4001
+ruby scripts/serve-local.rb
 ```
 
 Then open <http://127.0.0.1:4001>.
+
+The wrapper always uses port `4001`. If the preview server is already running,
+it exits cleanly instead of starting a second Jekyll process and raising
+`Address already in use`.
