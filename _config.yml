@@ -1,0 +1,31 @@
+title: Abrahán Mesa
+description: Notes on software engineering, architecture, programming problems, and learning projects.
+url: ""
+baseurl: ""
+author:
+  name: Abrahán Mesa
+  linkedin: "https://www.linkedin.com/in/abrahanmesa/"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Paris
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - scripts
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md

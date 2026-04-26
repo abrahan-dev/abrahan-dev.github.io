@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if page.source_path %}<span>{{ page.source_path }}</span>{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="description">{{ page.description }}</p>
+    {% endif %}
+    {% if page.categories.size > 0 %}
+      <div class="tags">
+        {% for category in page.categories %}
+          <a href="{{ '/categories/' | relative_url }}#{{ category | slugify }}">{{ category }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>

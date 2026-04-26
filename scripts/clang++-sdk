@@ -1,0 +1,3 @@
+#!/bin/sh
+SDK=/Library/Developer/CommandLineTools/SDKs/MacOSX26.2.sdk
+exec /usr/bin/clang++ -isysroot "$SDK" -I"$SDK/usr/include/c++/v1" "$@"
